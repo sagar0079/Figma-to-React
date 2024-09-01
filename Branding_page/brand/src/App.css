@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  /* background: paleturquoise; */
+  height: 72px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  /* gap: 24px; */
+  justify-content: space-between;
+  width: 333px;
+  color: #2E2E2E;
+}
+
+button {
+  all: unset;
+  background-color: #D01C28;
+  border: none;
+  color: white;
+  padding: 6px 16px;
+  /* width: 75px; */
+  height: 31px;
+}
+
+.main {
+  display: flex;
+  max-width: 1125px;
+  /* height: calc(100vh - 72px); */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* background-color: #D01C28; */
+  margin: 0px auto;
+  margin-top: 80px;
+  height: 613px;
+}
+
+.left {
+  width: 595px;
+  /* background: orange; */
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.left h1 {
+  font-weight: 800;
+  font-size: 108px;
+  line-height: 102px;
+  /* height: 306px; */
+}
+.left p {
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 400px;
+  /* line-height: 102px; */
+  color: #5A5959;
+}
+
+.left .shop_btn {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.cat_btn {
+  background: transparent;
+  color: #5A5959;
+  border: 2px solid black;
+  font-weight: 600;
+}
+
+.shop_logo p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 16px;
+}
+
+.img_logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}

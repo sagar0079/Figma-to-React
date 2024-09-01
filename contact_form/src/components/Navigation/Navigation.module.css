@@ -1,0 +1,23 @@
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* padding: 0 91px; */
+    height: 72px;
+    /* padding: 0 8px; */
+}
+
+.logo {
+    margin-left: 91px;
+}
+  
+.navigation div:nth-child(2) ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-weight: 500;
+    margin-right: 81px;
+}

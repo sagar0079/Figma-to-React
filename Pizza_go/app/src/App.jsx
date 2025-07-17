@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import FoodBody from './components/FoodBody';
 
-export const BASE_URL = "http://localhost:9000";
+export const BASE_URL = import.meta.env.PROD ? "" : "http://localhost:9000";
 
 const App = () => {
 
@@ -17,7 +17,7 @@ const App = () => {
 
       setLoading(true);
       try {
-        const response = await fetch(BASE_URL);
+        const response = await fetch(BASE_URL + "/api/food-data");
   
         const foodData = await response.json();
   
@@ -97,7 +97,7 @@ const App = () => {
       {
         filterBtnType.map((val) => (
         <Button 
-        isSelected = {selectBtn === val.type}
+        $isSelected = {selectBtn === val.type}
         key={val.name} onClick={() => filterBtn(val.type)}>
           {val.name}
         </Button>
